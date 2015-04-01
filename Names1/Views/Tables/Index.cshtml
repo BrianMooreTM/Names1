@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Names1.Models.Table>
 
 @{
-    ViewBag.Title = "Index here is a change Branch";
+    ViewBag.Title = "Index here is a change Branch. This is a clone";
 }
 
 <h2>Index</h2>
@@ -35,7 +35,7 @@
             @Html.DisplayFor(modelItem => item.NickName)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("EditClone", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
